@@ -4,9 +4,8 @@ const { Sequelize } = require('sequelize');
 const sequelize = new Sequelize('trinhphutan', 'root', null, {
     host: 'localhost',
     dialect: 'mysql',
-    "logging": false
+    logging: false
 });
-
 let connectDB = async () => {
     try {
         await sequelize.authenticate();
